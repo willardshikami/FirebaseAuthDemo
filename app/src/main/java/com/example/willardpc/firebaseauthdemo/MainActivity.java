@@ -78,9 +78,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
+                if (task.isSuccessful()){
 
+                }
             }
-        })
+        });
 
     }
 
